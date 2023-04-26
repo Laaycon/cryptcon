@@ -93,34 +93,46 @@ nav .btn:hover{
     margin-bottom: 5px;
 }
 
-@media screen and (max-width: 600px){
-    nav ul li{
-        display: none;
-    }
 
-    .content h1{
-        font-size: 50px;
-        margin-bottom: 5px;
-    }    
-
-    .coin-list{
-        position: absolute;
-        padding-right: 40px;
-        right: 50px;
-        bottom: 50px;
-        justify-content: center;
-        display: inline-block;
-        align-items: center;
-    }
-    .coin{
-        display: flex;
-        align-items: center;
-        font-size: 14px;
-        margin: 0 15px;
-        color: #ff960b;
-        border: 1px solid #fff;
-        padding: 20px 30px;
-        border-radius: 8px;
-        margin-bottom: 10px;
-    }
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 4%;
+  }
+  .content {
+    margin-top: 20%;
+  }
+  .content h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+  }
+  .content p {
+    font-size: 12px;
+  }
+  .coin-list {
+    display: none;
+  }
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+  nav .btn {
+    display: block;
+    margin: 10px auto;
+  }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    padding: 0 10%;
+  }
+  .content {
+    margin-top: 10%;
+  }
+  .content h1 {
+    font-size: 72px;
+    margin-bottom: 10px;
+  }
+  .content p {
+    font-size: 14px;
+  }
+} 
